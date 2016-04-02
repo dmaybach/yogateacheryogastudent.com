@@ -1,0 +1,437 @@
+@import url(http://db.onlinewebfonts.com/c/4aa07785958ea9c8b85135c775271547?family=FuturaPTW01-Book);
+@font-face {font-family: "FuturaPTW01-Book";
+    src: url("http://db.onlinewebfonts.com/t/4aa07785958ea9c8b85135c775271547.eot");
+    src: url("http://db.onlinewebfonts.com/t/4aa07785958ea9c8b85135c775271547.eot?#iefix") format("embedded-opentype"),
+    url("http://db.onlinewebfonts.com/t/4aa07785958ea9c8b85135c775271547.woff") format("woff"),
+    url("http://db.onlinewebfonts.com/t/4aa07785958ea9c8b85135c775271547.ttf") format("truetype"),
+    url("http://db.onlinewebfonts.com/t/4aa07785958ea9c8b85135c775271547.svg#FuturaPTW01-Book") format("svg");
+}
+body{
+    font-family: 'Raleway', sans-serif;
+}
+#video{
+    overflow: hidden;
+}
+.html5-video-container{
+    height: 100% !important;
+}
+.header{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    z-index: 1000;
+}
+.header a{
+    display: inline-block;
+    float: right;
+}
+.header .logo{
+    float: left;
+    margin-top: 20px;
+}
+.header .download{
+    margin-top: 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    line-height: normal;
+    border: 1px solid #fff;
+    padding: 8px 20px;
+    color: #fff;
+    font-weight: 100;
+}
+.header .download:hover{
+    text-decoration: none;
+    background-color: #fff;
+    color: #444;
+}
+.header .logo img{
+    display: block !important;
+    height: 25px;
+}
+#preloader{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    text-align: center;
+    z-index: 10000;
+}
+.preloader-wrap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+#preloader_1{
+    position:relative;
+}
+#preloader_1 span{
+    display:block;
+    bottom:0px;
+    width: 9px;
+    height: 5px;
+    background:#9b59b6;
+    position:absolute;
+    animation: preloader_1 1.5s  infinite ease-in-out;
+}
+
+#preloader_1 span:nth-child(2){
+    left:11px;
+    animation-delay: .2s;
+
+}
+#preloader_1 span:nth-child(3){
+    left:22px;
+    animation-delay: .4s;
+}
+#preloader_1 span:nth-child(4){
+    left:33px;
+    animation-delay: .6s;
+}
+#preloader_1 span:nth-child(5){
+    left:44px;
+    animation-delay: .8s;
+}
+@keyframes preloader_1 {
+    0% {height:5px;transform:translateY(0px);background:#9b59b6;}
+    25% {height:30px;transform:translateY(15px);background:#3498db;}
+    50% {height:5px;transform:translateY(0px);background:#9b59b6;}
+    100% {height:5px;transform:translateY(0px);background:#9b59b6;}
+}
+
+.home_area {
+    min-height: calc(100vh - 57px);
+}
+.home_area h1 {
+	font-family: 'FuturaPTW01-Book';
+	letter-spacing: 0.07em;
+    font-size: 55px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 25px 0;
+    letter-spacing: 2px;
+}
+.m-b-lg{
+    margin-bottom: 30px !important;
+}
+.home_area h2 {
+    color: white;
+    font-size: 66px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 0 75px 0;
+    -moz-text-shadow: 1px 1px 5px rgba(51, 51, 51, 0.3);
+    text-shadow: 1px 1px 5px rgba(51, 51, 51, 0.3);
+
+}
+.home_area h2::selection {
+    background: #5133b7;
+    color: white;
+}
+.home_area a.more {
+    display: inline-block;
+    padding: 20px 50px 15px 50px;
+    color: white;
+    font-size: 1.6125rem;
+    letter-spacing: 2px;
+    background-size: contain;
+    border: 1px solid #ccc;
+    border-radius: 111px;
+}
+
+.home_area a.more:hover {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+    color: #FFFFFF;
+    border-color: transparent;
+}
+
+.home_area::after, .home_area::before {
+    /* these are the 2 half blocks which cover the content once the animation is triggered */
+    content: '';
+    height: 50vh;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    background-color: #ffffff;
+    z-index: 2;
+    /* Force Hardware Acceleration */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition: -webkit-transform 0.4s 0.4s;
+    -moz-transition: -moz-transform 0.4s 0.4s;
+    transition: transform 0.4s 0.4s;
+}
+.home_area::before {
+    top: 0;
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+.home_area::after {
+    bottom: 0;
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+}
+.home_area.page-is-changing::after, .home_area.page-is-changing::before {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: -webkit-transform 0.4s 0s;
+    -moz-transition: -moz-transform 0.4s 0s;
+    transition: transform 0.4s 0s;
+}
+
+.edit-main{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+.edit-main.more h2 {
+    margin-bottom: 0;
+    font-size: 42px;
+}
+.edit-main .edit-content {
+    position: relative;
+}
+.edit-main .edit-content::after, main .main-content::before {
+    /* these are the 2 gradient overlay at the top and bottom of the .adit-content - to indicate that you can scroll */
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 50px;
+    width: 100%;
+}
+.edit-main .edit-content::before {
+    top: 0;
+}
+.edit-main .edit-content::after {
+    bottom: 0;
+}
+.edit-main .edit-content.home {/* vertically center its content */
+    display: table;
+    width: 100%;
+    height: calc(100vh - 57px);
+    text-align: center;
+}
+.edit-main .edit-content.home > div {
+    /* vertically center the content inside the .index */
+    display: table-cell;
+    vertical-align: middle;
+}
+.edit-main .edit-content.home::after {
+    /*background-color: rgba(64, 137, 166, 0);
+    background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, .7), rgba(255, 255, 255, 0));
+    background-image: linear-gradient(to top, rgba(255, 255, 255, .7), rgba(255, 255, 255, 0));
+*/}
+.edit-main .edit-content.home::before {
+    background-color: rgba(64, 137, 166, 0);
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .7), rgba(255, 255, 255, 0));
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, .7), rgba(255, 255, 255, 0));
+}
+.edit-main .edit-content.more {
+    padding: 80px 15px 50px;
+}
+.edit-main .edit-content.more a.back {
+    margin: 30px auto;
+    display: block;
+    font-size: 1.3em;
+    line-height: 25px;
+    width: 140px;
+    height: 38px;
+    padding-left: 40px;
+    background: url(img/go_back_button.png) no-repeat center center transparent;
+    background-size: contain;
+    -moz-border-radius: 50px;
+}
+.edit-main .scroll-info {
+    font-size: 1em;
+}
+.scroll-info {
+    text-align: center;
+}
+.edit-main .scroll-info img {
+    opacity: 1!important;
+    display: inline-block!important;
+}
+.img_area > img {
+    text-align: center;
+    width: 400px;
+    max-height: 700px;
+    display: block!important;
+    margin-left: 00px;
+}
+
+.home_area > img {
+    display: block!important;
+    opacity: 1!important;
+    text-align: center;
+    width: 400px;
+    max-height: 700px;
+}
+
+.margin_area {
+    margin-top: 20px;
+}
+.margin_area h3 {
+    font-size: 30px;
+    font-weight: 100;
+    margin-bottom: 80px;
+    margin-top: 100px;
+    color:white;
+    text-align: center;
+}
+
+
+.form_area input[name=first_name] {
+    border: 1px solid #8c83d3;
+    border-radius: 8px;
+    float: left;
+    height: 55px;
+    padding-left: 20px;
+    position: relative;
+    width: 40%;
+}
+
+.form_area input[name=last_name] {
+    border: 1px solid #8c83d3;
+    border-radius: 8px;
+    float: left;
+    height: 55px;
+    padding-left: 20px;
+    position: relative;
+    width: 40%;
+    margin-left: 10px;
+}
+
+.form_area input[name=email] {
+    border: 1px solid #8c83d3;
+    border-radius: 8px;
+    float: left;
+    height: 55px;
+    padding-left: 20px;
+    position: relative;
+    width: 82%;
+    margin-top: 10px;
+}
+
+.form_area select[name=teacher] {
+    border: 1px solid #8c83d3;
+    border-radius: 8px;
+    float: left;
+    height: 55px;
+    padding-left: 20px;
+    position: relative;
+    width: 82%;
+    margin-top: 10px;
+}
+
+.form_area input[name=submit] {
+    background: #5133b7 none repeat scroll 0 0;
+    background: #5133b7 none repeat scroll 0 0;
+    border: 3px solid #5133b7;
+    border-radius: 30px;
+    color: #fff;
+    height: 55px;
+    margin-left: 0%;
+    margin-top: 10px;
+    position: relative;
+    width: 82%;
+    font-size: 15px;
+}
+
+.form_area {
+    margin-top: 10px;
+    margin-left: 110px;
+}
+.form_info {
+    line-height: 44px;
+    text-align: center;
+    width: 82%;
+}
+
+.footer {
+    display: none;
+    font-family: sans-serif;
+    background-color: #EFEFEF;
+    color: #959595;
+    min-height: 250px;
+    font-size: 13px;
+    letter-spacing: 0.07em;
+    font-weight: 100px;
+    padding-bottom: 25px;
+}
+
+.tr {
+    font-family: sans-serif;
+    font-size: 13px;
+    margin: 0;
+    padding-bottom: 20px;
+    color: #5133b7;
+}
+.footer p{
+    margin-bottom: 3px;
+}
+
+#footer article {
+    padding-bottom: 30px;
+}
+#footer article:last-child {
+    padding-bottom: 0;
+}
+
+#footer .content::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.rows {
+    width: 100%;
+    max-width: 1170px;
+    padding: 50px 0;
+}
+#footer .rows{
+    padding-bottom: 0px;
+}
+
+.end_rows {
+    margin-top: 80px;
+    padding: 10px;
+    background-color: rgba(153, 153, 153, 0);
+    color: rgba(71, 45, 161, 0.66);
+    font-size: 14px;
+    text-align: center;
+}
+#footer .end_rows .rows{
+    padding: 20px 0;
+}
+.end_rows p{
+    margin: 0;
+}
+
+.flogos {
+    max-width: 155px;
+    float: left;
+    padding-right: 10px;
+}
+
+.footerP {
+    margin-top: -4px;
+}
