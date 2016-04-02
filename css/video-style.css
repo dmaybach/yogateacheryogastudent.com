@@ -435,3 +435,13 @@ body{
 .footerP {
     margin-top: -4px;
 }
+.about, .desktop{
+    display: inline-block !important;
+}
+.about a{
+    color: #fff;
+    display: inline-block;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    margin-right: 10px;
+}

@@ -1029,8 +1029,8 @@ b {
 }
 
 em {
-    font-style: normal;
-    color: #97aabc;
+    font-style: bold;
+    color: #674BA9;
 }
 
 a:link,
@@ -2219,7 +2219,7 @@ body.modal-open {
 
 @media screen and (min-width: 801px) {
     .sidebar {
-        padding-top: 5.25rem;
+        padding-top: 2.25rem;
     }
 }
 
