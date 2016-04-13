@@ -29,6 +29,7 @@ body{
 .header .logo{
     float: left;
     margin-top: 20px;
+    margin-left: 5px;
 }
 .header .download{
     margin-top: 20px;
@@ -40,6 +41,8 @@ body{
     padding: 8px 20px;
     color: #fff;
     font-weight: 100;
+    margin-right: 5px;
+
 }
 .header .download:hover{
     text-decoration: none;
@@ -104,9 +107,9 @@ body{
     min-height: calc(100vh - 57px);
 }
 .home_area h1 {
-	font-family: 'FuturaPTW01-Book';
+	font-family: 'linesregular';
 	letter-spacing: 0.07em;
-    font-size: 55px;
+    font-size: 45px;
     font-weight: 700;
     text-align: center;
     margin: 0 0 25px 0;

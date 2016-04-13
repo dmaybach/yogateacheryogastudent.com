@@ -1066,11 +1066,17 @@ h1 {
     margin: 36px 0;
     margin: 2.25rem 0;
     font-size: 32px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 48px;
     line-height: 3rem;
+    font-family: 'Varela Round', sans-serif;
+    color: #674BA9;
 }
-
+h1.stroke {
+    border-bottom: 1.5px solid #e2edf6;
+    padding-bottom: .32em;
+    font-size: 1.5rem;
+}
 h2 {
     margin: 24px 0 12px;
     margin: 1.5rem 0 0.75rem;
